@@ -45,3 +45,8 @@ Files changed:
 Artifacts: .qa/motion-results.json, .qa/motion-extra-results.json, .qa/repaired-1440.png and .qa/repaired-390.png (gitignored). Full-page screenshots inspected after traversal and image/font settling; interactive scrolling checked separately.
 
 Limits: physical iOS/Android and low-end devices were not tested. These checks do not rule out every intermittent glitch. Initially visible content deliberately skips entrance hiding to prevent hydration flashes.
+
+## Follow-up verification of the re-uploaded brief
+The uploaded brief was identical to the previous request. Two coverage gaps were found and closed: process heading/intro targets were absent from the shared selector, and the initial hero entrance had been omitted to avoid a hydration flash. The hero now uses a short translate-only text entrance with opacity always 1, plus a gentle photograph scale. Anchor-restored visits skip this initial sequence; reduced-motion users skip it. Process headings use the existing one-time observer. No design/content changes.
+
+Repeated lab run at 1440/1280/768/390/320px passed the same interaction, visibility and overflow checks. Observed CLS: 0.0017, 0.0019, 0.0023, 0.0233, 0.0052 respectively. Long-task counts: 3/3/3/3/2; largest tasks: 553/138/157/118/138ms. These include startup work on a shared Windows host, and show why no fixed frame-rate claim is made. Delayed vision image loading, no-JS H1/12 FAQ details, single-property hover and scroll-colour reversal passed again. Follow-up files: PresentationEffects.jsx and this report.
