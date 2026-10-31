@@ -81,3 +81,12 @@ This repository publishes to https://iqxintelligencequotient.github.io/RK-GROUP/
 The workflow obtains VITE_SITE_URL from GitHub Pages configuration. This sets the Vite base path, browser-router basename, image/internal link paths, canonical and schema URLs, manifest scope, and SEO files. For a local production simulation set VITE_SITE_URL to the URL above before running `npm run build` and `npm run verify:ssg`. Then run `npm run preview` and visit `/RK-GROUP/`. `npm run dev` continues to use `/`.
 
 The homepage is generated as readable static HTML. Unknown URLs use the real `404.html`. New public routes must be added to the prerender route registry. No backend is required for the existing WhatsApp quotation flow.
+
+## Homepage SEO and social sharing
+
+Selected title: RK Group Lahore | Cleaning Supplies & Waste Management.
+Description: Find cleaning materials, janitorial supplies, equipment and waste-management solutions in Lahore. Contact RK Group to discuss your needs and request a quotation.
+
+The branded 1200x630 JPEG is `public/images/brand/rk-group-lahore-social-preview.jpg` (also copied to `public/og-image.jpg`). Production HTML includes absolute Open Graph and Twitter image URLs, image dimensions/type/alt, canonical, robots and social metadata. JSON-LD describes the business, Lahore service area, service categories, FAQs and website using the existing page content. No review scores, opening hours, credentials or service guarantees are invented. New image URLs can help sharing platforms refresh an older preview; cached shares may still need a platform re-scrape.
+
+Alternative titles for later review: Cleaning & Janitorial Supplies in Lahore | RK Group; RK Group | Lahore Cleaning & Waste Management Solutions. Alternative descriptions: Explore cleaning supplies, janitorial materials and waste-management enquiries in Lahore. Share your facility needs with RK Group and discuss suitable options. / RK Group helps Lahore businesses find cleaning products, equipment and waste-management solutions. Contact our team to discuss your facility requirements.
