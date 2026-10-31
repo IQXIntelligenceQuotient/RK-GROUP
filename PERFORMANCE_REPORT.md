@@ -31,3 +31,5 @@ Same public URL, Lighthouse mobile configuration, one run before and one after:
 | CLS |0.003|0.003|
 | Transfer bytes |1552KiB|487KiB|
 The optimized local preview scored 88, but that is a different hosting environment and is not the reported live score. These are synthetic single runs, not field measurements or a guarantee. The result is improved but still below a 90+ target; remaining render/startup costs and the Pages cache TTL are disclosed rather than hidden. Live footer transparency, optimized hero selection, loaded font and no page errors/overflow were verified. A final source-discovery restriction to JSX alone also reduced the compressed stylesheet from 32.49KB to 32.25KB; no additional score increase is claimed for that small follow-up.
+
+Follow-up: verified the footer remains transparent on the public site. Enabled Lightning CSS 1.32.0 minification, reducing compressed CSS from 32.25KB to 31.58KB. Clean npm ci, build, lint and static HTML checks passed in a separate source export. This is a small additional byte reduction; no new Lighthouse score is claimed.
