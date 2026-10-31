@@ -6,7 +6,7 @@ import './index.css';
 import './reference.css';
 import './layout.css';
 const root=document.getElementById('root');
-const app=<StrictMode><BrowserRouter><App/></BrowserRouter></StrictMode>;
+const app=<StrictMode><BrowserRouter basename={import.meta.env.BASE_URL}><App/></BrowserRouter></StrictMode>;
 if(root.children.length > 0) hydrateRoot(root,app); else createRoot(root).render(app);
 
 import './contact-footer.css';

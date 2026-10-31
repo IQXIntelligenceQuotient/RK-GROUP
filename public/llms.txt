@@ -1,17 +1,17 @@
 # RK Group
 
-Official website: https://example.com/
+Official website: https://iqxintelligencequotient.github.io/RK-GROUP/
 
 ## About
 RK Group is a Lahore-based startup focused on cleaning materials, janitorial supplies, hygiene solutions and waste-management enquiries. All products and services use one RK Group identity.
 
 ## Important Pages
-- Home: https://example.com/
-- About: https://example.com/#about
-- Services: https://example.com/#services
-- Industries: https://example.com/#industries
-- Quotation: https://example.com/#quotation
-- Contact: https://example.com/#contact
+- Home: https://iqxintelligencequotient.github.io/RK-GROUP/
+- About: https://iqxintelligencequotient.github.io/RK-GROUP/#about
+- Services: https://iqxintelligencequotient.github.io/RK-GROUP/#services
+- Industries: https://iqxintelligencequotient.github.io/RK-GROUP/#industries
+- Quotation: https://iqxintelligencequotient.github.io/RK-GROUP/#quotation
+- Contact: https://iqxintelligencequotient.github.io/RK-GROUP/#contact
 
 ## Service Categories
 - Cleaning Chemicals & Materials: Cleaning chemicals and consumable materials for routine maintenance, hygiene and facility-cleaning applications.
@@ -33,7 +33,7 @@ Head office: 17-B, Central Park Housing Site, 32-km Ferozpur Road, Lahore, Pakis
 
 ## Contact
 Telephone / WhatsApp: +92 327 4230030; +92 306 4721021.
-Use https://example.com/#quotation for a WhatsApp enquiry draft.
+Use https://iqxintelligencequotient.github.io/RK-GROUP/#quotation for a WhatsApp enquiry draft.
 
 ## Scope
 Product availability and service scope must be confirmed. Healthcare and specialist waste services require appropriately authorised arrangements. Stock and generated images are illustrative, not RK Group operations.

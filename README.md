@@ -73,3 +73,11 @@ The latest supplied services/about/industries reference is implemented with nine
 Generated images are illustrative marketing scenes, not evidence of actual stocked models, RK Group employees, customers or premises. Service descriptions and waste-scope qualifications remain authoritative. The about image was corrected using the approved supplied logo as a reference.
 
 The contact banner uses a generated illustrative support scene: public/images/home/rk-group-support.webp. The original and generation prompt are retained in src/assets/images/generated/ and image-generation.json. Contact channels use confirmed phone and WhatsApp details; business hours, email and social accounts are omitted pending verification.
+
+## GitHub Pages deployment
+
+This repository publishes to https://iqxintelligencequotient.github.io/RK-GROUP/ using `.github/workflows/deploy-pages.yml` on pushes to `main` or manual dispatch. Pages Source must be **GitHub Actions**, not a source branch. The workflow installs from package-lock.json, lints, prerenders, verifies deployment paths, and uploads only `dist`.
+
+The workflow obtains VITE_SITE_URL from GitHub Pages configuration. This sets the Vite base path, browser-router basename, image/internal link paths, canonical and schema URLs, manifest scope, and SEO files. For a local production simulation set VITE_SITE_URL to the URL above before running `npm run build` and `npm run verify:ssg`. Then run `npm run preview` and visit `/RK-GROUP/`. `npm run dev` continues to use `/`.
+
+The homepage is generated as readable static HTML. Unknown URLs use the real `404.html`. New public routes must be added to the prerender route registry. No backend is required for the existing WhatsApp quotation flow.

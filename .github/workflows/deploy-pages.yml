@@ -1,0 +1,58 @@
+name: Deploy website to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - name: Configure GitHub Pages
+        id: pages
+        # First enable Settings > Pages > Source: GitHub Actions.
+        # Automatic enablement requires an additional privileged token.
+        uses: actions/configure-pages@v6
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Build readable static pages and SEO files
+        run: npm run build
+        env:
+          VITE_SITE_URL: ${{ steps.pages.outputs.base_url }}
+      - name: Verify page content, metadata, links and assets
+        run: npm run verify:ssg
+        env:
+          VITE_SITE_URL: ${{ steps.pages.outputs.base_url }}
+      - name: Upload built website
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+          include-hidden-files: true
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
