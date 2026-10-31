@@ -21,3 +21,4 @@ import './generated-decor.css';
 import './readability.css';
 import './presentation.css';
 import './mobile-refinement.css';
+import './final-motion.css';
