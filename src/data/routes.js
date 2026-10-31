@@ -1,0 +1,1 @@
+export const routes = [{path:'/',title:'RK Group Lahore | Janitorial Supplies, Cleaning & Waste Management Services',description:'Explore cleaning materials, janitorial supplies and waste-management solutions in Lahore. Contact RK Group to discuss requirements and request a quotation.'}];

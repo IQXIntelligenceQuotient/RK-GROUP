@@ -1,0 +1,1 @@
+export default function OptimizedImage({src,alt,width,height,priority=false,...props}){return <img src={src} alt={alt} width={width} height={height} loading={priority?'eager':'lazy'} fetchPriority={priority?'high':'auto'} decoding="async" {...props}/>;}

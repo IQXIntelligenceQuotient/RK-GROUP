@@ -1,0 +1,4 @@
+import {readFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {routes} from '../src/data/routes.js';
+for(const r of routes){const html=await readFile(r.path==='/'?'dist/index.html':'dist'+r.path+'/index.html','utf8');for(const token of ['<h1','<h2','<p','<a','<details','rel="canonical"','name="description"','og:title','application/ld+json'])assert(html.includes(token),r.path+' missing '+token);const schemas=[...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)];for(const s of schemas)JSON.parse(s[1]);assert(!html.includes('<!--app-html-->'));}for(const f of ['robots.txt','sitemap.xml','sitemap-index.xml','image-sitemap.xml','llms.txt','humans.txt','site.webmanifest','favicon.svg'])await readFile('dist/'+f);console.log('Static HTML and SEO files verified.');

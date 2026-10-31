@@ -1,0 +1,41 @@
+{
+  "name": "rk-group-website",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && npm run prerender && npm run generate:seo",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "prerender": "node scripts/prerender.mjs",
+    "build:ssg": "npm run build",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "generate:image-sitemap": "node scripts/generate-image-sitemap.mjs",
+    "generate:llms": "node scripts/generate-llms.mjs",
+    "generate:seo": "npm run generate:sitemap && npm run generate:image-sitemap && npm run generate:llms",
+    "verify:ssg": "node scripts/verify-ssg.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.0",
+    "framer-motion": "^12.23.0",
+    "lucide-react": "^0.468.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.0"
+  },
+  "devDependencies": {
+    "vite": "^7.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "tailwindcss": "^4.1.0",
+    "@tailwindcss/vite": "^4.1.0",
+    "postcss": "^8.5.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^9.39.0",
+    "@eslint/js": "^9.39.0",
+    "globals": "^16.5.0",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-react-refresh": "^0.4.24"
+  }
+}

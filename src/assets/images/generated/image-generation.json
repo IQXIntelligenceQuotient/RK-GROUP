@@ -1,0 +1,98 @@
+{
+  "mode": "Built-in image_gen",
+  "reference": "C:/Users/hp/AppData/Local/Temp/codex-clipboard-b0d58488-71b0-4f3b-b454-9dce38512708.png",
+  "brandReference": "public/images/brand/rk-group-combined-logo.png",
+  "assets": [
+    {
+      "name": "cleaning-materials",
+      "subject": "the FIRST service-card photo: four unbranded household and commercial cleaning liquid bottles arranged on a pale mint counter: small dark emerald spray bottle, taller white bottle with red cap, emerald detergent bottle with yellow cap, translucent yellow liquid bottle, soft bright mint tiled room with a small plant",
+      "path": "C:\\Users\\hp\\.codex\\generated_images\\01a18d22-8478-7131-a87e-8f6c89de7ae9\\exec-cf42106e-227b-429e-847e-15a80d090451.png",
+      "prompt": "Generate ONE photorealistic wide landscape website service-card photograph. The attached screenshot is a composition and visual reference ONLY. Recreate the FIRST service-card photo: four unbranded household and commercial cleaning liquid bottles arranged on a pale mint counter: small dark emerald spray bottle, taller white bottle with red cap, emerald detergent bottle with yellow cap, translucent yellow liquid bottle, soft bright mint tiled room with a small plant. Match the specific referenced thumbnail's subject, colour palette, lighting and composition as closely as possible. Output only the standalone photograph, approximately 16:9 landscape. Crisp natural photographic textures, physically plausible objects, professional commercial photography, generous framing to permit a wide thumbnail crop. No UI, no card frame, no headings, no buttons, no collage, no invented branding or watermark. This is illustrative marketing imagery, not documentation of actual company operations.",
+      "projectOriginal": "src/assets/images/generated/cleaning-materials.png",
+      "deliveryPath": "public/images/services/cleaning-materials-photo.webp"
+    },
+    {
+      "name": "janitorial-supplies",
+      "subject": "the SECOND service-card photo: bright blue mop bucket filled with plain spray bottles, two upright mop handles, blue microfiber mop and yellow brush heads resting on a light blue floor, bright pale blue clean room",
+      "path": "C:\\Users\\hp\\.codex\\generated_images\\01a18d22-8478-7131-a87e-8f6c89de7ae9\\exec-09e67f63-118a-4304-86e0-02d2f7089a88.png",
+      "prompt": "Generate ONE photorealistic wide landscape website service-card photograph. The attached screenshot is a composition and visual reference ONLY. Recreate the SECOND service-card photo: bright blue mop bucket filled with plain spray bottles, two upright mop handles, blue microfiber mop and yellow brush heads resting on a light blue floor, bright pale blue clean room. Match the specific referenced thumbnail's subject, colour palette, lighting and composition as closely as possible. Output only the standalone photograph, approximately 16:9 landscape. Crisp natural photographic textures, physically plausible objects, professional commercial photography, generous framing to permit a wide thumbnail crop. No UI, no card frame, no headings, no buttons, no collage, no invented branding or watermark. This is illustrative marketing imagery, not documentation of actual company operations.",
+      "projectOriginal": "src/assets/images/generated/janitorial-supplies.png",
+      "deliveryPath": "public/images/services/janitorial-supplies-photo.webp"
+    },
+    {
+      "name": "cleaning-equipment",
+      "subject": "the THIRD service-card photo: realistic green and dark charcoal compact walk-behind floor scrubber machine, front three-quarter angle, black handle, visible small wheels and squeegee, in an airy clean corporate lobby with plants",
+      "path": "C:\\Users\\hp\\.codex\\generated_images\\01a18d22-8478-7131-a87e-8f6c89de7ae9\\exec-6531c5d1-5bf2-4f4e-987c-97e24d207b8d.png",
+      "prompt": "Generate ONE photorealistic wide landscape website service-card photograph. The attached screenshot is a composition and visual reference ONLY. Recreate the THIRD service-card photo: realistic green and dark charcoal compact walk-behind floor scrubber machine, front three-quarter angle, black handle, visible small wheels and squeegee, in an airy clean corporate lobby with plants. Match the specific referenced thumbnail's subject, colour palette, lighting and composition as closely as possible. Output only the standalone photograph, approximately 16:9 landscape. Crisp natural photographic textures, physically plausible objects, professional commercial photography, generous framing to permit a wide thumbnail crop. No UI, no card frame, no headings, no buttons, no collage, no invented branding or watermark. This is illustrative marketing imagery, not documentation of actual company operations.",
+      "projectOriginal": "src/assets/images/generated/cleaning-equipment.png",
+      "deliveryPath": "public/images/services/cleaning-equipment-photo.webp"
+    },
+    {
+      "name": "janitorial-services",
+      "subject": "the FOURTH service-card photo: full-body male cleaner seen from behind and side wearing dark emerald polo, matching trousers and green cap, pushing a compact floor scrubber in a sunlit modern white and glass lobby with plants, focus on realistic worker and machine",
+      "path": "C:\\Users\\hp\\.codex\\generated_images\\01a18d22-8478-7131-a87e-8f6c89de7ae9\\exec-a4723f59-2f71-4c38-a7f4-19d6c7802d4d.png",
+      "prompt": "Generate ONE photorealistic wide landscape website service-card photograph. The attached screenshot is a composition and visual reference ONLY. Recreate the FOURTH service-card photo: full-body male cleaner seen from behind and side wearing dark emerald polo, matching trousers and green cap, pushing a compact floor scrubber in a sunlit modern white and glass lobby with plants, focus on realistic worker and machine. Match the specific referenced thumbnail's subject, colour palette, lighting and composition as closely as possible. Output only the standalone photograph, approximately 16:9 landscape. Crisp natural photographic textures, physically plausible objects, professional commercial photography, generous framing to permit a wide thumbnail crop. No UI, no card frame, no headings, no buttons, no collage, no invented branding or watermark. This is illustrative marketing imagery, not documentation of actual company operations.",
+      "projectOriginal": "src/assets/images/generated/janitorial-services.png",
+      "deliveryPath": "public/images/services/janitorial-services-photo.webp"
+    },
+    {
+      "name": "industrial-materials",
+      "subject": "the FIFTH service-card photo: a row of large clean blue industrial steel drums in a spacious warehouse aisle with metal shelving and warm natural light, three-quarter perspective, no text",
+      "path": "C:\\Users\\hp\\.codex\\generated_images\\01a18d22-8478-7131-a87e-8f6c89de7ae9\\exec-b735c55a-ad64-4eda-b660-0ba8bceb0100.png",
+      "prompt": "Generate ONE photorealistic wide landscape website service-card photograph. The attached screenshot is a composition and visual reference ONLY. Recreate the FIFTH service-card photo: a row of large clean blue industrial steel drums in a spacious warehouse aisle with metal shelving and warm natural light, three-quarter perspective, no text. Match the specific referenced thumbnail's subject, colour palette, lighting and composition as closely as possible. Output only the standalone photograph, approximately 16:9 landscape. Crisp natural photographic textures, physically plausible objects, professional commercial photography, generous framing to permit a wide thumbnail crop. No UI, no card frame, no headings, no buttons, no collage, no invented branding or watermark. This is illustrative marketing imagery, not documentation of actual company operations.",
+      "projectOriginal": "src/assets/images/generated/industrial-materials.png",
+      "deliveryPath": "public/images/services/industrial-materials-photo.webp"
+    },
+    {
+      "name": "industrial-waste",
+      "subject": "the SIXTH service-card photo: large dark green wheeled industrial waste dumpsters with closed lids, lined along a spotless outdoor paved industrial facility lane, realistic bins and wheels, clean factory glass frontage behind, no text",
+      "path": "C:\\Users\\hp\\.codex\\generated_images\\01a18d22-8478-7131-a87e-8f6c89de7ae9\\exec-127c14e2-f694-4093-92ff-784232401af6.png",
+      "prompt": "Generate ONE photorealistic wide landscape website service-card photograph. The attached screenshot is a composition and visual reference ONLY. Recreate the SIXTH service-card photo: large dark green wheeled industrial waste dumpsters with closed lids, lined along a spotless outdoor paved industrial facility lane, realistic bins and wheels, clean factory glass frontage behind, no text. Match the specific referenced thumbnail's subject, colour palette, lighting and composition as closely as possible. Output only the standalone photograph, approximately 16:9 landscape. Crisp natural photographic textures, physically plausible objects, professional commercial photography, generous framing to permit a wide thumbnail crop. No UI, no card frame, no headings, no buttons, no collage, no invented branding or watermark. This is illustrative marketing imagery, not documentation of actual company operations.",
+      "projectOriginal": "src/assets/images/generated/industrial-waste.png",
+      "deliveryPath": "public/images/services/industrial-waste-photo.webp"
+    },
+    {
+      "name": "medical-waste",
+      "subject": "the SEVENTH service-card photo: two bright red wheeled medical-waste bins with closed lids, authentic white biohazard symbols on the front, clean bright indoor institutional corridor, no waste exposed, no additional text",
+      "path": "C:\\Users\\hp\\.codex\\generated_images\\01a18d22-8478-7131-a87e-8f6c89de7ae9\\exec-47f562c9-6aca-4962-9e31-8912e055341a.png",
+      "prompt": "Generate ONE photorealistic wide landscape website service-card photograph. The attached screenshot is a composition and visual reference ONLY. Recreate the SEVENTH service-card photo: two bright red wheeled medical-waste bins with closed lids, authentic white biohazard symbols on the front, clean bright indoor institutional corridor, no waste exposed, no additional text. Match the specific referenced thumbnail's subject, colour palette, lighting and composition as closely as possible. Output only the standalone photograph, approximately 16:9 landscape. Crisp natural photographic textures, physically plausible objects, professional commercial photography, generous framing to permit a wide thumbnail crop. No UI, no card frame, no headings, no buttons, no collage, no invented branding or watermark. This is illustrative marketing imagery, not documentation of actual company operations.",
+      "projectOriginal": "src/assets/images/generated/medical-waste.png",
+      "deliveryPath": "public/images/services/medical-waste-photo.webp"
+    },
+    {
+      "name": "commercial-waste",
+      "subject": "the EIGHTH service-card photo: three closed-lid wheelie recycling bins green yellow and blue in that order, small white recycling symbols on fronts, clean beige sunlit commercial courtyard, no words",
+      "path": "C:\\Users\\hp\\.codex\\generated_images\\01a18d22-8478-7131-a87e-8f6c89de7ae9\\exec-623223d3-51b1-434b-a002-361ee6c6a115.png",
+      "prompt": "Generate ONE photorealistic wide landscape website service-card photograph. The attached screenshot is a composition and visual reference ONLY. Recreate the EIGHTH service-card photo: three closed-lid wheelie recycling bins green yellow and blue in that order, small white recycling symbols on fronts, clean beige sunlit commercial courtyard, no words. Match the specific referenced thumbnail's subject, colour palette, lighting and composition as closely as possible. Output only the standalone photograph, approximately 16:9 landscape. Crisp natural photographic textures, physically plausible objects, professional commercial photography, generous framing to permit a wide thumbnail crop. No UI, no card frame, no headings, no buttons, no collage, no invented branding or watermark. This is illustrative marketing imagery, not documentation of actual company operations.",
+      "projectOriginal": "src/assets/images/generated/commercial-waste.png",
+      "deliveryPath": "public/images/services/commercial-waste-photo.webp"
+    },
+    {
+      "name": "society-waste",
+      "subject": "the NINTH service-card photo: three dark green closed-lid wheelie bins beside a manicured landscaped residential sidewalk with shrubs and sunshine, small recycling symbols, no words",
+      "path": "C:\\Users\\hp\\.codex\\generated_images\\01a18d22-8478-7131-a87e-8f6c89de7ae9\\exec-5c38b7db-08f4-42a6-9f4d-d6d136fda89a.png",
+      "prompt": "Generate ONE photorealistic wide landscape website service-card photograph. The attached screenshot is a composition and visual reference ONLY. Recreate the NINTH service-card photo: three dark green closed-lid wheelie bins beside a manicured landscaped residential sidewalk with shrubs and sunshine, small recycling symbols, no words. Match the specific referenced thumbnail's subject, colour palette, lighting and composition as closely as possible. Output only the standalone photograph, approximately 16:9 landscape. Crisp natural photographic textures, physically plausible objects, professional commercial photography, generous framing to permit a wide thumbnail crop. No UI, no card frame, no headings, no buttons, no collage, no invented branding or watermark. This is illustrative marketing imagery, not documentation of actual company operations.",
+      "projectOriginal": "src/assets/images/generated/society-waste.png",
+      "deliveryPath": "public/images/services/society-waste-photo.webp"
+    },
+    {
+      "name": "about",
+      "subject": "Branded cleaner operating a floor scrubber in a polished modern lobby, matching the supplied reference.",
+      "path": "C:\\Users\\hp\\.codex\\generated_images\\01a18d22-8478-7131-a87e-8f6c89de7ae9\\exec-ddc6d3ca-ff41-40a2-9e52-606d9986794e.png",
+      "prompt": "Generate one photorealistic landscape photograph matching the large about image: full-body cleaner in dark emerald uniform and cap, exact supplied RK Group logo on upper back, operating a professional scrubber in a polished marble and glass corporate lobby with greenery and warm lighting. Landscape 4:3, no headings, UI, overlays or watermarks. Illustrative scene, not actual company operations.",
+      "projectOriginal": "src/assets/images/generated/about-logo-corrected.png",
+      "deliveryPath": "public/images/home/rk-group-cleaning-lobby.webp"
+    }
+  ],
+  "aboutLogoCorrection": {
+    "source": "C:\\Users\\hp\\.codex\\generated_images\\01a18d22-8478-7131-a87e-8f6c89de7ae9\\exec-6689440c-94b5-4e9a-8854-7274fa4a59e5.png",
+    "savedAs": "src/assets/images/generated/about-logo-corrected.png",
+    "prompt": "Edit ONLY the embroidered company logo on the upper back of the cleaner green polo. Preserve the entire photograph, person, pose, fabric folds, floor scrubber, lobby, lighting, framing and colours unchanged. Remove the invented hexagonal/cube icon and RKGroup text. Replace with a small faithful embroidered reproduction of the EXACT supplied RK GROUP logo: actual metallic silver parallel bands and green leaf emblem on left, actual green RK and dark blue GROUP lettering. Never invent alternate marks. Preserve proportions and physically realistic embroidery. Omit tiny tagline rather than generating incorrect letters."
+  },
+  "contactBanner": {
+    "mode": "Built-in image_gen",
+    "projectOriginal": "src\\assets\\images\\generated\\support-contact.png",
+    "deliveryPath": "public/images/home/rk-group-support.webp",
+    "prompt": "Photorealistic fictional Pakistani female support professional with brown hair, black headset and emerald polo bearing faithful supplied RK Group logo. Subject on right, softly blurred green office and plants, daylight, landscape 4:3, no UI, captions or contact text. Match the supplied contact-banner reference."
+  }
+}

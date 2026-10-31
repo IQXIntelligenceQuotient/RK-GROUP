@@ -1,0 +1,16 @@
+/* A single page-wide canvas: decorative ribbons cross section boundaries. */
+#main{position:relative;isolation:isolate;overflow:clip;background:linear-gradient(180deg,#fcfefd 0%,#f4faf5 20%,#f9fcf9 46%,#eff8f1 73%,#f8fcf9 100%)}
+#main:before,#main:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background-repeat:repeat-y;background-size:100% 1850px}
+#main:before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1850'%3E%3Cpath d='M-200-200C700 90-360 470 180 770S2000 620 2060 1100S300 1330-140 1900' fill='none' stroke='%23d9eddc' stroke-opacity='.55' stroke-width='110'/%3E%3Cpath d='M-200-190C700 100-360 480 180 780S2000 630 2060 1110S300 1340-140 1910' fill='none' stroke='%23fdfefd' stroke-opacity='.9' stroke-width='3'/%3E%3C/svg%3E")}
+#main:after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1850'%3E%3Cpath d='M2030-80C1320 170 2160 600 1700 950S-220 1120-100 1610S1400 1620 2000 1930' fill='none' stroke='%23c6e4cb' stroke-opacity='.28' stroke-width='65'/%3E%3Cpath d='M2030-100C1320 150 2160 580 1700 930S-220 1100-100 1590S1400 1600 2000 1910' fill='none' stroke='%23ffffff' stroke-opacity='.9' stroke-width='2'/%3E%3C/svg%3E")}
+#main .background-shell{background:transparent;isolation:auto;overflow:visible}
+#main .background-shell:before,#main .background-shell:after{display:none}
+#main .background-shell>section,#main .background-shell>.nature-continuum{background:transparent!important;box-shadow:none;border-radius:0}
+#main .hero:before,#main .service-section:before,#main .service-section:after{display:none}
+#main .nature-continuum{isolation:auto;background:transparent!important}
+#main .nature-continuum:before,#main .nature-continuum:after,#main .approach-section:before,#main .approach-section:after,#main .vision-section:before{display:none}
+#main .nature-continuum>section,#main .nature-continuum .process-section{background:transparent!important}
+#main .nature-wave{display:none}
+#main .reference-faq .faq-intro-copy{background:linear-gradient(120deg,#fbfefbe8,#f4faf5d9)}
+#main .contact-banner:before{display:none}
+@media(max-width:650px){#main:before,#main:after{background-size:170% 1500px;background-position:center top;opacity:.65}}

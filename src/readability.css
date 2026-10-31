@@ -1,0 +1,35 @@
+/* Readable typography and comfortable text spacing across the marketing page. */
+#main h1,#main h2{font-weight:750;line-height:1.16;letter-spacing:-.035em}
+#main .eyebrow{font-size:11px;line-height:1.6;font-weight:750;letter-spacing:.16em;margin-bottom:18px}
+#main .service-section .section-heading h2{font-size:clamp(32px,3vw,44px);line-height:1.15}
+#main .service-section .section-heading p:not(.eyebrow),#main .section-heading p:not(.eyebrow),#main .about-copy>p:not(.eyebrow),#main .quote-copy>p:not(.eyebrow),#main .nature-continuum .approach-intro>p:not(.eyebrow),#main .nature-continuum .vision-copy p:not(.eyebrow),#main .nature-continuum .centered-heading>p:not(.eyebrow){font-size:16px;line-height:1.8;font-weight:450;color:#4b6270}
+#main .about-copy h2,#main .nature-continuum .approach-intro h2,#main .nature-continuum .vision-copy h2,#main .quote-copy h2,#main .nature-continuum .centered-heading h2,#main .sectors-section h2{font-size:clamp(32px,2.9vw,42px);line-height:1.16;margin-bottom:20px}
+#main .about-copy>p:not(.eyebrow),#main .quote-copy>p:not(.eyebrow){margin-top:16px;margin-bottom:18px}
+#main .about-copy .about-purpose{font-size:15px!important;line-height:1.8;padding:16px 20px 16px 24px;margin-block:24px}
+#main .service-card h3{font-size:17px;font-weight:750;line-height:1.4;margin:18px 18px 12px;letter-spacing:-.02em}
+#main .service-card>p{font-size:14px;font-weight:450;line-height:1.75;color:#4c6370;margin:0 18px 22px}
+#main .service-card{min-height:380px;padding-bottom:18px}
+#main .service-card>a{font-size:11px;font-weight:700;line-height:1.5;margin-inline:18px;min-height:44px}
+#main .sector-grid article{padding:5px 5px 20px;min-height:340px}
+#main .sector-grid .sector-title{padding:18px 15px 0;min-height:75px;gap:10px}
+#main .sector-grid .sector-title h3{font-size:18px;font-weight:750;line-height:1.4;letter-spacing:-.02em}
+#main .sector-grid article>p{font-size:15px;font-weight:450;line-height:1.75;color:#4c6370;padding:0;margin:15px 15px 24px;max-width:none}
+#main .sector-grid article>img{height:180px}
+#main .nature-continuum .approach-items h3{font-size:15px;line-height:1.45;font-weight:750;margin-bottom:10px}
+#main .nature-continuum .approach-items p{font-size:14px;line-height:1.75;font-weight:450;color:#4c6370}
+#main .nature-continuum .approach-items article{padding:22px 16px;gap:13px}
+#main .nature-continuum .approach-grid{grid-template-columns:.32fr .68fr;gap:35px}
+#main .nature-continuum .approach-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+#main .nature-continuum .process-grid article{padding-bottom:24px;padding-top:24px;min-height:240px}
+#main .nature-continuum .process-grid h3{font-size:16px;font-weight:750;line-height:1.4;margin-bottom:13px}
+#main .nature-continuum .process-grid p{font-size:14px;line-height:1.75;color:#4c6370;font-weight:450}
+#main .about-feature-grid h3{font-size:14px;line-height:1.5;font-weight:700;margin-top:10px}
+#main .about-feature-grid p{font-size:13px;line-height:1.7;color:#4c6370;margin-top:7px}
+#main .button,#main .text-link{font-weight:700}
+#main .nature-continuum .vision-pledge{font-size:14px;font-weight:600;line-height:1.6}
+#main .quote-copy p.scope-note{font-size:13px;line-height:1.8}
+#main .contact-banner-copy>p:not(.eyebrow){font-size:16px;line-height:1.8;font-weight:450;color:#4c6370}
+@media(max-width:1049px){#main .nature-continuum .approach-grid{grid-template-columns:1fr}#main .service-card h3{font-size:16px}#main .service-card>p{font-size:14px}#main .contact-banner-copy>p:not(.eyebrow){font-size:14px}}
+@media(max-width:650px){#main .eyebrow{font-size:10px;margin-bottom:14px}#main .service-section .section-heading h2,#main .about-copy h2,#main .nature-continuum .approach-intro h2,#main .nature-continuum .vision-copy h2,#main .quote-copy h2,#main .nature-continuum .centered-heading h2,#main .sectors-section h2{font-size:31px;line-height:1.2;margin-bottom:18px}#main .service-section .section-heading p:not(.eyebrow),#main .section-heading p:not(.eyebrow),#main .about-copy>p:not(.eyebrow),#main .quote-copy>p:not(.eyebrow),#main .nature-continuum .approach-intro>p:not(.eyebrow),#main .nature-continuum .vision-copy p:not(.eyebrow),#main .nature-continuum .centered-heading>p:not(.eyebrow){font-size:15px;line-height:1.8}#main .service-card{min-height:390px}#main .service-card h3{font-size:15px;margin-inline:13px}#main .service-card>p{font-size:13px;margin-inline:13px}#main .service-card>a{font-size:10px;margin-inline:13px}#main .sector-grid .sector-title{padding-inline:10px}#main .sector-grid .sector-title h3{font-size:16px}#main .sector-grid article>p{font-size:13px;margin-inline:10px}#main .sector-grid article>img{height:135px}#main .nature-continuum .approach-items{grid-template-columns:1fr}#main .nature-continuum .process-grid article{padding-inline:14px;min-height:0}#main .nature-continuum .process-grid h3{font-size:15px}#main .nature-continuum .process-grid p{font-size:13px}#main .about-copy .about-purpose{font-size:14px!important;padding:15px 18px}#main .contact-banner-copy>p:not(.eyebrow){font-size:15px}}
+@media(max-width:360px){#main .service-card{min-height:0}#main .service-card h3{font-size:19px}#main .service-card>p{font-size:15px}#main .sector-grid .sector-title h3{font-size:19px}#main .sector-grid article>p{font-size:15px}#main .nature-continuum .process-grid{grid-template-columns:1fr;gap:34px}#main .nature-continuum .process-grid p{font-size:15px}}
+@media(max-width:700px){#main .nature-continuum .centered-heading{display:block;max-width:none}#main .nature-continuum .centered-heading>p:not(.eyebrow){margin-top:18px}#main .nature-continuum .process-section>.page-width{display:block}#main .nature-continuum .process-grid{margin-top:38px}#main .nature-continuum .process-grid article{min-width:0}#main .nature-continuum .process-grid .step-top>span{left:-8px}}

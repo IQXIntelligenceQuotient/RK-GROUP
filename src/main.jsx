@@ -1,0 +1,22 @@
+import { StrictMode } from 'react';
+import { createRoot, hydrateRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import './index.css';
+import './reference.css';
+import './layout.css';
+const root=document.getElementById('root');
+const app=<StrictMode><BrowserRouter><App/></BrowserRouter></StrictMode>;
+if(root.children.length > 0) hydrateRoot(root,app); else createRoot(root).render(app);
+
+import './contact-footer.css';
+import './faq.css';
+import './nature.css';
+import './layers.css';
+import './desktop-width.css';
+import './backgrounds.css';
+import './continuous-canvas.css';
+import './spacing.css';
+import './generated-decor.css';
+import './readability.css';
+import './presentation.css';

@@ -1,0 +1,21 @@
+/* Matching photographic corners, reflected rather than using different artwork. */
+.background-hero .corner-art-left{top:-65px;left:-90px;transform:rotate(180deg);width:330px;height:390px}
+.background-hero .corner-art-right{top:-65px;right:-90px;transform:rotate(180deg) scaleX(-1);width:330px;height:390px}
+.background-contact .corner-art-left{bottom:-70px;left:-90px;transform:scaleX(-1);width:330px;height:390px}
+.background-contact .corner-art-right{bottom:-70px;right:-90px;transform:none;width:330px;height:390px}
+.service-card,.sector-grid article,.approach-items article,.process-grid article,.quote-form-panel,.contact-action-panel{transition:box-shadow .28s ease,border-color .28s ease,translate .28s ease}
+.button,.text-link,.footer-channel-links a{transition:box-shadow .25s ease,background .25s ease,color .25s ease,transform .25s ease}
+@media(hover:hover) and (pointer:fine){#main .service-card:hover,#main .sector-grid article:hover,#main .approach-items article:hover,#main .process-grid article:hover{translate:0 -6px;box-shadow:0 16px 36px #174d2820;border-color:#9ac9ab}#main .button:hover{box-shadow:0 9px 22px #00593723}.footer-channel-links a:hover{transform:translateY(-3px);background:#ffffff15}.hero-visual:hover{box-shadow:0 18px 50px #123a2820}.service-card-art img,.sector-grid article>img{transition:scale .5s ease}.service-card:hover .service-card-art img,.sector-grid article:hover>img{scale:1.035}}
+.hero .eyebrow .typing-label{display:inline-block;overflow:hidden;white-space:nowrap;width:auto;height:auto;border-radius:0;background:none;color:inherit;flex-shrink:1;max-width:100%;animation:rk-type 2s steps(36,end) .3s both}
+@keyframes rk-type{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@media(max-width:1650px){.background-hero .corner-art-left,.background-contact .corner-art-left{left:-175px}.background-hero .corner-art-right,.background-contact .corner-art-right{right:-175px}}
+@media(max-width:900px){.background-hero .corner-art-left,.background-contact .corner-art-left{left:-230px}.background-hero .corner-art-right,.background-contact .corner-art-right{right:-230px}.section-corner-art{opacity:.2}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.service-card,.sector-grid article,.approach-items article,.process-grid article{translate:none!important}}
+/* Show the entire foliage cutout inside each gutter, without negative offsets. */
+#main .background-hero .section-corner-art,#main .background-contact .section-corner-art{width:clamp(110px,calc((100vw - var(--content-width))/2 - 12px),285px);height:auto;aspect-ratio:1/1;object-fit:contain;opacity:.82}
+#main .background-hero .corner-art-left{left:6px;top:12px;transform:rotate(180deg)}
+#main .background-hero .corner-art-right{right:6px;top:12px;transform:rotate(180deg) scaleX(-1)}
+#main .background-contact .corner-art-left{left:6px;bottom:8px;transform:scaleX(-1)}
+#main .background-contact .corner-art-right{right:6px;bottom:8px;transform:none}
+@media(max-width:1600px){#main .background-hero .section-corner-art,#main .background-contact .section-corner-art{width:110px;opacity:.32}}
+@media(max-width:900px){#main .background-hero .section-corner-art,#main .background-contact .section-corner-art{width:90px;opacity:.2}#main .background-hero .corner-art-left,#main .background-hero .corner-art-right{top:0}#main .background-contact .corner-art-left,#main .background-contact .corner-art-right{bottom:0}}

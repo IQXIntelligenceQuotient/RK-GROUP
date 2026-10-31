@@ -1,0 +1,15 @@
+/* Full-screen surfaces with independent, centered content bounds. */
+.background-shell{position:relative;isolation:isolate;width:100%;max-width:none;overflow:clip;margin:0}
+.background-shell>section,.background-shell>.nature-continuum{width:calc(100% - var(--page-gutter)*2);max-width:var(--content-width);margin-inline:auto;min-width:0}
+.background-hero{background:linear-gradient(120deg,#f1f8f4,#fff 52%,#f4faf6)}
+.background-solutions{background:linear-gradient(135deg,#e5f3e5,#f8fcf8 50%,#e0f1e3)}
+.background-about{background:linear-gradient(115deg,#eaf3e9,#fff 70%)}
+.background-nature{background:radial-gradient(ellipse at 0% 50%,#d1ead680,transparent 55%),linear-gradient(130deg,#fff,#f1f9f1)}
+.background-quotation{background:linear-gradient(120deg,#f0f8f2,#fff 55%,#f5faf6)}
+.background-answers{background:linear-gradient(125deg,#fff,#f5faf7)}
+.background-contact{background:linear-gradient(120deg,#f9fcfa,#eaf6ed)}
+.background-shell:before,.background-shell:after{content:'';position:absolute;z-index:-1;pointer-events:none;border-radius:100% 0 100% 0;}
+.background-solutions:before,.background-nature:before{width:clamp(100px,18vw,340px);height:360px;left:-120px;top:0;transform:rotate(-30deg);background:linear-gradient(30deg,#83c28b55,#d9eedc33)}
+.background-solutions:after,.background-nature:after{width:clamp(120px,17vw,320px);height:520px;right:-130px;bottom:-80px;transform:rotate(25deg);border:32px solid #cae7cc70;background:#e1f2e440}
+.background-hero:before{width:420px;height:420px;top:-290px;left:max(-160px,calc((100% - var(--content-width))/2 - 180px));border:45px solid #e0eee540;border-radius:50%}
+@media(max-width:650px){.background-shell:before,.background-shell:after{opacity:.45}.background-shell>.nature-continuum{width:calc(100% - var(--page-gutter)*2)}}

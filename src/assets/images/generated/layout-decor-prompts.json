@@ -1,0 +1,13 @@
+{
+  "tool": "Built-in imagegen",
+  "prompts": [
+    "Transparent background photorealistic decorative cutout: single elegant fresh green leaf curving diagonally upward right, delicate veins, tiny dew droplets, soft natural daylight. Premium botanical photography, emerald and spring green. No text, no border, no background, isolated with padding.",
+    "Transparent background premium photorealistic cleaning tools still life: emerald green small bucket, two white spray bottles with green triggers, rolled mint microfiber towel, white scrub brush with forest green handle. Compact tasteful arrangement, three quarter view, natural soft light, no text or logos, no floor or backdrop, isolated cutout.",
+    "Transparent background premium photorealistic waste sorting illustration: three neat wheeled bins side by side in forest green, blue and yellow, simple white recycling symbols only, no words or labels. Small plant sprig beside base. Three quarter front view, clean realistic materials, natural light, isolated cutout, no backdrop or floor."
+  ],
+  "assets": [
+    "public/images/decor/fresh-leaf.webp",
+    "public/images/decor/cleaning-tools.webp",
+    "public/images/decor/recycling-bins.webp"
+  ]
+}

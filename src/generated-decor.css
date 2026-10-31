@@ -1,0 +1,40 @@
+.generated-decor{position:absolute;object-fit:contain;pointer-events:none;filter:saturate(.85);width:clamp(100px,12vw,210px);height:auto;opacity:.63}.decor-leaf{top:9%;right:-30px;transform:rotate(-20deg);width:clamp(100px,11vw,180px)}.decor-cleaning{top:24%;left:-24px;transform:rotate(-10deg);opacity:.38}.decor-bins{top:52%;right:-25px;transform:rotate(7deg);opacity:.38}.decor-leaf-bottom{top:79%;left:-48px;transform:rotate(65deg);opacity:.45}.footer-botanical{position:absolute;right:max(25px,calc((100% - var(--content-width))/2 - 30px));top:14px;width:150px;height:150px;object-fit:contain;opacity:.12;filter:grayscale(1) sepia(1) hue-rotate(75deg);pointer-events:none;z-index:-1}.reference-footer .footer-city{width:310px;opacity:.25;bottom:65px}.background-tools .tool-spray,.background-tools .tool-brush{opacity:.4}
+@media(min-width:1050px) and (max-width:1650px){.generated-decor{width:105px;opacity:.23}.decor-cleaning{left:-40px}.decor-bins{right:-40px}}
+@media(max-width:1049px){.generated-decor{width:110px;opacity:.2}.decor-cleaning{left:-50px}.decor-bins{right:-50px}.decor-leaf{right:-55px}.decor-leaf-bottom{left:-55px}.footer-botanical{right:15px;width:120px;height:120px}}
+@media(max-width:650px){.generated-decor{width:90px;opacity:.14}.decor-cleaning{left:-35px}.decor-bins{right:-35px}.reference-footer .footer-city{width:220px}}
+/* Separate product cutouts sit in the outer decorative gutters. */
+.decor-scrubber{top:18%;right:-12px;transform:rotate(8deg);opacity:.42;width:clamp(110px,11vw,200px)}
+.decor-mops{top:34%;left:-15px;transform:rotate(-12deg);opacity:.4;width:clamp(110px,12vw,210px)}
+.decor-filtration{top:47%;right:-16px;opacity:.36;width:clamp(120px,12vw,220px)}
+.decor-waste-network{top:69%;left:-12px;opacity:.36;width:clamp(120px,12vw,220px)}
+.decor-cleaning{top:10%}.decor-bins{top:58%}
+@media(max-width:1650px){.decor-scrubber,.decor-mops,.decor-filtration,.decor-waste-network{width:105px;opacity:.2}.decor-scrubber,.decor-filtration{right:-40px}.decor-mops,.decor-waste-network{left:-40px}}
+@media(max-width:650px){.decor-scrubber,.decor-mops,.decor-filtration,.decor-waste-network{width:85px;opacity:.12}.decor-scrubber,.decor-filtration{right:-38px}.decor-mops,.decor-waste-network{left:-38px}}
+/* Original botanical linework replaces generic symbols and skyline placeholders. */
+.eco-line-art{position:absolute;pointer-events:none;color:#438d632e;width:180px;height:auto}.eco-line-left{left:-15px;top:31%;transform:rotate(-8deg)}.eco-line-right{right:-15px;top:73%;width:210px}.reference-footer:before{display:none}.footer-botanical{display:none}.footer-eco-art{position:absolute;right:max(0px,calc((100% - var(--content-width))/2 - 70px));bottom:65px;width:350px;height:260px;color:#61b780;opacity:.19;z-index:-1;pointer-events:none}.reference-footer{background:radial-gradient(ellipse at 0% 100%,#004c3c,#002b23 64%)}
+@media(max-width:1650px){.eco-line-art{opacity:.55;width:120px}.eco-line-left{left:-40px}.eco-line-right{right:-45px;width:140px}}
+@media(max-width:650px){.eco-line-art{opacity:.4;width:100px}.footer-eco-art{width:260px;height:200px;bottom:140px;right:-55px}}
+.photo-botanical-left{top:37%;left:-65px;width:230px;opacity:.65;transform:rotate(-12deg)}.photo-cleaning-right{top:76%;right:-35px;width:210px;opacity:.5}.footer-garden-photo{position:absolute;right:0;bottom:62px;width:330px;height:330px;object-fit:contain;pointer-events:none;opacity:.5;z-index:-1}.reference-footer .footer-grid{position:relative;z-index:1}
+@media(max-width:1650px){.photo-botanical-left{width:140px;left:-65px;opacity:.35}.photo-cleaning-right{width:130px;right:-60px;opacity:.3}.footer-garden-photo{width:250px;height:250px;opacity:.32}}
+@media(max-width:650px){.photo-botanical-left,.photo-cleaning-right{width:110px;opacity:.18}.footer-garden-photo{width:210px;height:210px;bottom:140px;right:-45px;opacity:.25}}
+/* Each larger illustration owns space within its section, avoiding overlapping cutouts. */
+.nature-leaf{display:none}.background-tools .decor-leaf,.background-tools .decor-leaf-bottom,.background-tools .photo-botanical-left{display:none}
+.background-tools .decor-waste-network{top:62%;left:-35px}.background-tools .decor-bins{top:54%;right:-35px}
+.integrated-eco-illustration{position:relative;width:100%;max-width:340px;margin:28px 0 0;padding:12px 6px 0;background:radial-gradient(ellipse at 50% 70%,#cfe8d478,transparent 72%);border-radius:28px;isolation:isolate}
+.integrated-eco-illustration>img{width:100%;height:230px;object-fit:contain;filter:drop-shadow(0 12px 14px #164f2d12)}
+.integrated-cleaning-illustration{float:right;width:230px;margin:12px 0 0 18px;padding:8px;background:radial-gradient(ellipse,#d8eddc90,transparent 72%);border-radius:24px}
+.integrated-cleaning-illustration>img{width:100%;height:155px;object-fit:contain}
+#main .nature-continuum .vision-pledge{clear:both}
+.reference-footer .footer-garden-photo{width:450px;height:390px;right:0;bottom:58px;opacity:.38;object-position:right bottom}.reference-footer .footer-grid{z-index:1}.reference-footer .footer-botanical{display:none}.reference-footer:before{display:none}
+@media(max-width:1049px){.integrated-eco-illustration{max-width:380px}.integrated-eco-illustration>img{height:220px}.integrated-cleaning-illustration{float:none;width:100%;max-width:300px;margin:20px auto 0}.integrated-cleaning-illustration>img{height:190px}.reference-footer .footer-garden-photo{width:320px;height:320px;opacity:.25}}
+@media(max-width:650px){.integrated-eco-illustration{margin:22px auto 0;max-width:320px}.integrated-eco-illustration>img{height:230px}.integrated-cleaning-illustration{max-width:320px}.integrated-cleaning-illustration>img{height:220px}.reference-footer .footer-garden-photo{bottom:150px;right:-50px;width:290px;height:290px;opacity:.2}}
+/* Large photographic corner treatments belong to their own section gutters. */
+#main .background-hero,#main .background-contact{isolation:isolate;overflow:clip}
+.section-corner-art{position:absolute;pointer-events:none;z-index:-1;width:clamp(190px,19vw,370px);height:clamp(260px,28vw,470px);object-fit:contain;opacity:.75}
+.background-hero .corner-art-left{top:-70px;left:-90px;transform:rotate(145deg)}
+.background-hero .corner-art-right{top:-40px;right:-105px;transform:rotate(185deg)}
+.background-contact .corner-art-left{bottom:-100px;left:-105px;transform:rotate(20deg)}
+.background-contact .corner-art-right{bottom:-90px;right:-85px;transform:rotate(-8deg)}
+.reference-footer:before,.reference-footer:after,.reference-footer .footer-city,.reference-footer .footer-botanical,.reference-footer .footer-garden-photo,.reference-footer .footer-eco-art{display:none!important}
+@media(max-width:1650px){.section-corner-art{width:230px;height:330px;opacity:.5}.background-hero .corner-art-left{left:-125px}.background-hero .corner-art-right{right:-135px}.background-contact .corner-art-left{left:-135px}.background-contact .corner-art-right{right:-135px}}
+@media(max-width:900px){.section-corner-art{width:180px;height:240px;opacity:.22}.background-hero .corner-art-left{top:-50px;left:-125px}.background-hero .corner-art-right{top:-40px;right:-130px}.background-contact .corner-art-left{left:-130px;bottom:-60px}.background-contact .corner-art-right{right:-130px;bottom:-60px}}

@@ -1,0 +1,8 @@
+Brand: RK Group
+Organisation: RK Group
+Purpose: Cleaning, Hygiene & Waste Management Solutions
+Location: Lahore, Pakistan
+Contact: +92 327 4230030; +92 306 4721021
+Developer note: React homepage with build-time static HTML and hydration.
+Stack: Vite, React, React Router, Tailwind CSS, Framer Motion, React DOM Server
+Imagery: Illustrative stock photographs from Pexels and generated category scenes; not documentation of RK Group operations.

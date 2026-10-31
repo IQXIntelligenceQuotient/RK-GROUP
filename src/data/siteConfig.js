@@ -1,0 +1,1 @@
+export const siteConfig = {name:'RK Group',description:'Cleaning, Hygiene & Waste Management Solutions in Lahore, Pakistan.',defaultUrl:'https://example.com',phone:'+923274230030',alternatePhone:'+923064721021',address:'17-B, Central Park Housing Site, 32-km Ferozpur Road, Lahore, Pakistan.'};
