@@ -1,0 +1,9 @@
+/* One owner per property: reveals own translate/scale; hover owns transform. */
+#main .hero h1 .hero-emphasis.scroll-colour-word{background:linear-gradient(90deg,#006b49 0 var(--word-fill,0%),#a6b5af var(--word-fill,0%) 100%)!important;background-clip:text!important;-webkit-background-clip:text!important;-webkit-text-fill-color:transparent!important;color:#a6b5af!important}
+.hero .typing-label,.vision-copy.has-entered h2 span{animation:none!important;clip-path:none!important}
+#main .service-card,#main .sector-grid article,#main .approach-items article,#main .process-grid article,#main .about-feature-grid>div{translate:none;transition:transform 260ms ease,box-shadow 260ms ease,border-color 260ms ease}
+@media(hover:hover) and (pointer:fine){#main .service-card:hover,#main .sector-grid article:hover,#main .approach-items article:hover,#main .process-grid article:hover,#main .about-feature-grid>div:hover{translate:none;transform:translateY(-5px)}#main .service-card:hover .service-card-art img,#main .sector-grid article:hover>img{scale:1.025}}
+.faq-list details::details-content{transition-duration:300ms}
+.process-grid article.has-entered .step-top:after{animation:connector-in 760ms ease both}
+#main .vision-photo{isolation:isolate}#main .vision-photo img{opacity:1;visibility:visible}
+@media(prefers-reduced-motion:reduce){#main .hero h1 .hero-emphasis{background:none!important;-webkit-text-fill-color:#006b49!important;color:#006b49!important}#main .service-card:hover,#main .sector-grid article:hover,#main .about-feature-grid>div:hover{transform:none!important}}

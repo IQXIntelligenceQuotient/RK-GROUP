@@ -1,4 +1,3 @@
-import TypedWord from '../components/common/TypedWord';
 import { useState } from 'react';
 import { motion as Motion, useReducedMotion } from 'framer-motion';
 import { ArrowUpRight, ArrowRight, MapPin, Leaf, Sparkles, PackageCheck, Droplets, Brush, Settings, Factory, Recycle, HeartPulse, Building2, House, ShoppingBag, Check, MessageCircle, Phone, ShieldCheck, ClipboardList, MessagesSquare, FileText, CircleCheck, Cross, UsersRound, Layers3, Lightbulb, Headset } from 'lucide-react';
@@ -21,7 +20,7 @@ export default function Home(){
  <div className="background-shell background-hero"><img className="section-corner-art corner-art-left" src="/images/decor/footer-garden.webp" alt="" width="700" height="700" loading="lazy" aria-hidden="true"/><img className="section-corner-art corner-art-right" src="/images/decor/footer-garden.webp" alt="" width="700" height="700" loading="lazy" aria-hidden="true"/><section className="hero" id="home"><div className="page-width hero-grid">
  <Motion.div initial={false} animate={{opacity:1}} transition={{duration:reduceMotion?0:.35}} className="hero-copy">
  <Eyebrow><span className="typing-label">CLEANING · HYGIENE · WASTE MANAGEMENT</span></Eyebrow>
- <h1><span className="hero-title-line">Cleaner Spaces</span><span className="hero-title-line">for a <span className="hero-emphasis"><TypedWord>Healthier</TypedWord></span></span><span className="hero-title-line">Tomorrow</span></h1>
+ <h1><span className="hero-title-line">Cleaner Spaces</span><span className="hero-title-line">for a <span className="hero-emphasis">Healthier</span></span><span className="hero-title-line">Tomorrow</span></h1>
  <p className="hero-description">Cleaning supplies, janitorial services and waste-management solutions for businesses, industries, institutions and residential communities in Lahore.</p>
  <div className="button-row"><a className="button button-primary" href="#quotation">Request a Quotation <ArrowUpRight size={17}/></a><a className="button button-outline" href="#services">Explore Our Services <ArrowUpRight size={16}/></a></div>
  <div className="hero-sectors">{[{Icon:Building2,label:'Commercial'},{Icon:Factory,label:'Industrial'},{Icon:HeartPulse,label:'Institutional'},{Icon:House,label:'Residential'}].map(({Icon,label})=><a href="#industries" key={label}><span><Icon size={19}/></span>{label}</a>)}</div>

@@ -1,0 +1,47 @@
+# Animation repair report - 31 October 2026
+
+Confirmed causes:
+- The previous observer started opacity at zero after content had entered view, allowing visible-to-hidden flashes during anchors or fast scrolling.
+- The reveal target list included both copy containers and nested features, allowing compounded motion.
+- Card hover combined transform translateY(-3px) and a separate translate lift; both were measured active in Chromium.
+- Callback-local stagger indexing restarted on each observer batch. 230ms delays and 1000ms durations made sequence timing inconsistent.
+- The typing component cleared the full server-rendered word after hydration. It is no longer mounted; the new brief requests scroll-linked colour.
+- Vision colour had both CSS keyframe and JavaScript animation owners.
+
+Repairs:
+- One shared reveal observer; one-time WeakSet tracking; initially visible/anchor-restored content never hidden.
+- Pre-entry observation (100px below viewport) starts ordinary reveals before they are painted in view. Fast jumps skip hiding already-visible content and cancel pending effects.
+- No global hidden-content classes, permanent compositor hints, looping backgrounds or paragraph-by-paragraph state updates.
+- Reveal translate/scale is separate from hover transform. No simultaneous parent/child reveal targets.
+- Cards: 760ms, 110ms desktop / 75ms mobile stagger, capped at 440ms. Images: 900ms. Heading groups: 720ms. Supporting text: 650ms. CTA: 620ms. Icons: 500ms.
+- FAQ retains native details behaviour, 300ms content expansion and one entrance for its container. No form inputs are animated/remounted.
+- Healthier uses a semantic scroll-gradient word, cached dimensions and one rAF-throttled motion listener. Reduced motion shows the complete green word.
+- Floating back-to-top state only updates when its visibility threshold changes.
+
+Vision finding:
+The asset URL and wrapper dimensions were valid. No genuine missing image was reproduced. It loaded with simulated delayed responses, and appeared in settled full-page captures. Its original image is retained.
+
+Verification:
+Build, lint and static HTML/SEO/subpath checks passed. Chromium tested at 1440, 1280, 768, 390 and 320px. Slow/fast traversal, reverse/repeated scrolling, anchor refresh, Back/Forward, FAQ expansion, preserved form input values, reduced motion, delayed WebP requests (+180ms), no-JavaScript HTML and full-page capture were exercised. No page errors, overflow, invisible settled targets or repeat card animations were observed. Hover measured transform -5px with translate none. Healthier progress measured 0% -> 89.55% -> 0%. No simultaneously animated nested targets were found in the dedicated check. No-JS output retains the H1 and 12 FAQ details.
+
+Measured lab results (single runs, not field CWV or FPS guarantees):
+| Width | Observed CLS | Long tasks | Maximum task ms | Vision width px |
+|---|---:|---:|---:|---:|
+|1440|0.0017|2|107|639|
+|1280|0.0019|2|324|559|
+|768|0.0023|1|80|680|
+|390|0.0230|1|80|358|
+|320|0.0052|1|79|288|
+Long tasks include initial hydration and test activity. No before/after performance improvement is claimed.
+
+Files changed:
+- src/components/common/PresentationEffects.jsx
+- src/components/common/FloatingActions.jsx
+- src/pages/Home.jsx
+- src/main.jsx
+- src/motion-repair.css
+- ANIMATION_REPAIR_REPORT.md
+
+Artifacts: .qa/motion-results.json, .qa/motion-extra-results.json, .qa/repaired-1440.png and .qa/repaired-390.png (gitignored). Full-page screenshots inspected after traversal and image/font settling; interactive scrolling checked separately.
+
+Limits: physical iOS/Android and low-end devices were not tested. These checks do not rule out every intermittent glitch. Initially visible content deliberately skips entrance hiding to prevent hydration flashes.
