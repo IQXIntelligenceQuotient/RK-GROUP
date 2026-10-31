@@ -23,14 +23,15 @@ export default function PresentationEffects(){useEffect(()=>{
   if(media.matches){word?.classList.remove('scroll-colour-word');return;}
   word?.classList.add('scroll-colour-word');paint();
   observer=new IntersectionObserver(entries=>{
-   const groups=new Map();for(const entry of entries){if(!entry.isIntersecting||revealed.has(entry.target))continue;const el=entry.target;mark(el);
+   const groups=new Map();for(const entry of entries){if(!entry.isIntersecting||revealed.has(entry.target))continue;const el=entry.target;const rect=entry.boundingClientRect;mark(el);
     // If a fast jump/anchor already brought the content into view, leave it visible.
-    const rect=el.getBoundingClientRect();if(rect.bottom<0||(performance.now()<jumpUntil&&rect.top<innerHeight*.9))continue;
+    if(rect.bottom<0||(performance.now()<jumpUntil&&rect.top<innerHeight*.9))continue;
     if(!groups.has(el.parentElement))groups.set(el.parentElement,[]);groups.get(el.parentElement).push(el);
    }
    for(const group of groups.values()){group.sort((a,b)=>a.compareDocumentPosition(b)&Node.DOCUMENT_POSITION_FOLLOWING?-1:1);group.forEach((el,i)=>animate(el,Math.min(i*(innerWidth<700?75:110),440)));}
   },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
-  for(const el of document.querySelectorAll(SELECTOR)){if(revealed.has(el))continue;const rect=el.getBoundingClientRect();if(rect.top<innerHeight){mark(el); }else observer.observe(el);}
+  const pending=[...document.querySelectorAll(SELECTOR)].filter(el=>!revealed.has(el)).map(el=>({el,top:el.getBoundingClientRect().top}));
+  for(const {el,top} of pending){if(top<innerHeight)mark(el);else observer.observe(el);}
  };
  setup();
  // Above-fold content is already painted by SSG: keep it fully readable while

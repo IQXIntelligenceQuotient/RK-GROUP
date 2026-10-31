@@ -1,0 +1,5 @@
+{
+  "tool": "Built-in imagegen",
+  "prompt": "Faithful RK GROUP footer logo with original emblem, green RK, silver/white GROUP and tagline, true transparent alpha background. Preserve geometry and wording.",
+  "output": "public/images/brand/rk-group-footer-transparent.webp"
+}
