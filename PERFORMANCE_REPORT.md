@@ -19,3 +19,15 @@ Live GitHub Pages asset response returned Cache-Control: max-age=600. Repository
 
 ## Verification and scope
 Build, lint, static HTML/SEO/subpath checks passed; metadata/OG image remain intact. Footer transparency confirmed as RGBA alpha 0-255 and computed CSS background rgba(0,0,0,0). No design or business-content rewrite. Full source images and the generated-logo prompt remain in src/assets/images/generated. Image variants and WOFF2 are committed, so CI needs no Python image/font dependencies. Physical low-end mobile devices remain untested.
+
+## Verified live post-deployment audit
+Same public URL, Lighthouse mobile configuration, one run before and one after:
+| Metric | Before | After |
+|---|---:|---:|
+| Performance score |50|64|
+| FCP |5.4s|4.2s|
+| LCP |7.6s|4.6s|
+| TBT |310ms|290ms|
+| CLS |0.003|0.003|
+| Transfer bytes |1552KiB|487KiB|
+The optimized local preview scored 88, but that is a different hosting environment and is not the reported live score. These are synthetic single runs, not field measurements or a guarantee. The result is improved but still below a 90+ target; remaining render/startup costs and the Pages cache TTL are disclosed rather than hidden. Live footer transparency, optimized hero selection, loaded font and no page errors/overflow were verified. A final source-discovery restriction to JSX alone also reduced the compressed stylesheet from 32.49KB to 32.25KB; no additional score increase is claimed for that small follow-up.
